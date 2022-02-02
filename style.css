@@ -443,13 +443,7 @@ input[type="text"]:focus {
 
 
 /*****  main Section ******/
-.main2 {
-    padding-top: 60px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: flex-start;
-  }
+
   .news2 {
       width: 100%;
   }
