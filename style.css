@@ -16,11 +16,10 @@ html {
     width: 1170px;
 }
 
- .rowFlex
-{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.rowFlex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 nav {
     width: 100%;
@@ -98,15 +97,14 @@ nav .menu li a:hover {
     font-family: Poppins;
 }
 
-header .news {
+header .header-news {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #c31815;
     padding: 5px;
 }
-
-header .news button {
+header .header-news button {
     background-color: #fff;
     border: 1px solid #fff;
     margin-right: 30px;
@@ -115,252 +113,320 @@ header .news button {
     font-family: Poppins;
     animation: anime 1s ease-in-out 2s infinite forwards;
 }
-
-header .news p {
+header .header-news p {
     color: #fff;
     font-family: Poppins;
 }
 
-
 /* start comment section*/
-.comment,.topic{
-  padding:30px 0;
-  margin:20px auto;
+.comment,
+.topic {
+    padding: 30px 0;
+    margin: 20px auto;
 }
-.col-9{
-  width:60%;
+.col-9 {
+    width: 60%;
 }
-.commentDetails{
-  background-color: #F7F4F4;
-  padding:25px;
-  border-radius: 4px;
-  border-top:4px solid #2A2A2A;
+.commentDetails {
+    background-color: #f7f4f4;
+    padding: 25px;
+    border-radius: 4px;
+    border-top: 4px solid #2a2a2a;
 }
-.commentDetails p{
- font-size: 1.1rem;
- line-height: 1.5;
- color:#000;
- font-weight: 500;
+.commentDetails p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #000;
+    font-weight: 500;
 }
-.author{
- color:#2A2A2A;
- font-size: 14px;
- font-weight: normal;
- display: block;
- margin: 10px 0;
+.author {
+    color: #2a2a2a;
+    font-size: 14px;
+    font-weight: normal;
+    display: block;
+    margin: 10px 0;
 }
-.newsLink{
-  text-decoration-color: #2A2A2A;
-  color: #2A2A2A;
-  font-weight: bold;
-  transition: 0.5s;
+.newsLink {
+    text-decoration-color: #2a2a2a;
+    color: #2a2a2a;
+    font-weight: bold;
+    transition: 0.5s;
 }
-.newsLink:hover{
-  color: #C31815;
-  text-decoration-color: #C31815;
-  font-weight: bold;
+.newsLink:hover {
+    color: #c31815;
+    text-decoration-color: #c31815;
+    font-weight: bold;
 }
-.subscribBtn{
-  background-color: #C31815;
-  color:#fff;
-  border: none;
-  border-radius: 4px;
-  font-size: 1.2rem;
-  padding: 15px 25px;
-  margin: 25px 0;
-  cursor: pointer;
-  transition: 0.5s;
+.subscribBtn {
+    background-color: #c31815;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    padding: 15px 25px;
+    margin: 25px 0;
+    cursor: pointer;
+    transition: 0.5s;
 }
 .subscribBtn:hover,
-.sendBtn:hover{
-  background-color: #9b0d0b;
-  box-shadow: 0 2px 15px rgb(0 0 0 / 9%);
+.sendBtn:hover {
+    background-color: #9b0d0b;
+    box-shadow: 0 2px 15px rgb(0 0 0 / 9%);
 }
-.subscribBtn i{
-  margin-right:10px;
-  font-size: 1.3rem;
+.subscribBtn i {
+    margin-right: 10px;
+    font-size: 1.3rem;
 }
-.tags{
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  margin:30px 0;
+.tags {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 30px 0;
 }
-.tagBtn{
-  background-color:#F6DDDC;
-  border:none;
-  border-radius: 50px;
-  padding:10px 25px;
-  color:#C31815;
-  font-size: 1rem;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  cursor: pointer;
-  transition: 0.5s;
+.tagBtn {
+    background-color: #f6dddc;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 25px;
+    color: #c31815;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.5s;
 }
-.tagBtn:hover{
-  background-color: #c31815;
-  color:#fff;
+.tagBtn:hover {
+    background-color: #c31815;
+    color: #fff;
 }
-.formComment{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; 
-  background-color: #F7F4F4;
-  border-radius: 4px;
-  padding:10px 25px;
-}
-
-.sendBtn{
-  background-color: #C31815;
-  border:none;
-  border-radius: 4px;
-  color:#fff;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  padding:15px 30px;
-  transition: 0.5s;
-
+.formComment {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #f7f4f4;
+    border-radius: 4px;
+    padding: 10px 25px;
 }
 
-input[type="text"]{
-  width: 80%;
-  border:none;
-  background-color: transparent;
+.sendBtn {
+    background-color: #c31815;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px 30px;
+    transition: 0.5s;
 }
 
-input[type="text"]:focus{
-outline: none;
+input[type="text"] {
+    width: 80%;
+    border: none;
+    background-color: transparent;
 }
 
-.userComment{
-  margin:30px 0;
-
+input[type="text"]:focus {
+    outline: none;
 }
 
-.userComment h3{
-  font-size: 1.2rem;
+.userComment {
+    margin: 30px 0;
 }
-.userComment p{
-  font-size: 0.9rem;
-  width:50%;
-  line-height: 1.7;
-  font-weight: bold;
-  margin: 10px 0;
 
+.userComment h3 {
+    font-size: 1.2rem;
 }
-.userComment span{
-  color: #C31815;
+.userComment p {
+    font-size: 0.9rem;
+    width: 50%;
+    line-height: 1.7;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.userComment span {
+    color: #c31815;
 }
 
 /* Start topic Section */
-.topic{
-  margin-bottom: 50px;
+.topic {
+    margin-bottom: 50px;
 }
-.topic h2{
-  font-family: "IBM Plex Serif";
-  font-size: 22px;
-  margin:15px auto
+.topic h2 {
+    font-family: "IBM Plex Serif";
+    font-size: 22px;
+    margin: 15px auto;
 }
-.card{
-  width:220px;
-  border-radius: 6px;
-  overflow: hidden;
-  background-color: #F7F4F4;
+.card {
+    width: 220px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #f7f4f4;
 }
-.card img{
-  max-width: 100%;
-  width:100%;
-  object-fit: cover;
-  transition: 0.5s;
+.card img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
 }
-.card:hover{
-  box-shadow: 0 2px 15px rgba(247, 246, 246, 0.05);
+.card:hover {
+    box-shadow: 0 2px 15px rgba(247, 246, 246, 0.05);
+}
+.card img:hover {
+    transform: scale(1.1);
+}
+.card .body p {
+    line-height: 1.7;
+    padding: 0 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+/*****  main Section ******/
+.main {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+}
 
+.news {
+    width: 70%;
 }
-.card img:hover{
-  transform: scale(1.1);
-}
-.card .body p{
-  line-height: 1.7;
-  padding:0 15px;
-  font-size: 0.9rem;
-  font-weight:bold;
-  margin-bottom:25px;
-  margin-top: 10px;
+.news h2 {
+    background-color: #f1f2f3;
+    padding: 15px;
+    color: #2a2a2a;
+    font-family: "Poppins";
 }
 
+.news .cards {
+    display: flex;
+    margin-top: 13px;
+    justify-content: space-between;
+}
+.news .cards .card {
+    width: 48%;
+    background-color: #f1f2f3;
+}
+.news .cards .card .card-body {
+    padding: 15px;
+}
+.news .cards .card .card-body h3 {
+    color: #2a2a2a;
+    font-family: "IBM Plex Serif";
+}
+.news .cards .card .card-body p {
+    line-height: 1.5;
+    margin-top: 10px;
+    font-family: "Nunito Sans";
+    font-size: 1rem;
+}
+
+.news .cards .card img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+.news .cards .card:hover img {
+    transform: scale(1.1);
+}
+.blogs {
+    width: 25%;
+}
+
+.blogs h2 {
+    background-color: #f1f2f3;
+    padding: 15px;
+    color: #2a2a2a;
+    font-family: "Poppins";
+}
+.last-blogs {
+    background-color: #f1f2f3;
+    padding: 15px 0px 15px 15px;
+    margin-top: 10px;
+    height: 500px;
+}
+
+.last-blogs p {
+    color: #2a2a2a;
+    margin-bottom: 15px;
+    font-family: "IBM Plex Serif";
+    line-height: 115.38%;
+}
+/**** end main section ***/
 /* End topic Section */
 /* end comment  section*/
 
-@media (max-width:600px) {
-  .col-9{
-    width:100%;
-    text-align: center;
-  }
-  .commentDetails p{
-    font-size: 1.4rem;
-    line-height: 1.8;
-}
-  .author{
-  font-size: 1.2rem;
-}
-  .col-3{
-    display: none;
-  }
-  .userComment p{
-  width: 100%;
-  font-size: 1.3rem;
-  }
- 
-   .card, .topic h2 {
-    width:100%;
-    margin: 25px;
-  }
-  .topic h2{
-    font-size: 2rem;
-  }
-  .card .body p{
-    font-size: 1.9rem;
+@media (max-width: 600px) {
+    .col-9 {
+        width: 100%;
+        text-align: center;
+    }
+    .commentDetails p {
+        font-size: 1.4rem;
+        line-height: 1.8;
+    }
+    .author {
+        font-size: 1.2rem;
+    }
+    .col-3 {
+        display: none;
+    }
+    .userComment p {
+        width: 100%;
+        font-size: 1.3rem;
+    }
 
-  }
- 
+    .card,
+    .topic h2 {
+        width: 100%;
+        margin: 25px;
+    }
+    .topic h2 {
+        font-size: 2rem;
+    }
+    .card .body p {
+        font-size: 1.9rem;
+    }
 }
 
-@media (max-width:900px) {
-  .col-9{
-    width:100%;
-    margin:0 25px
-  }
-  .commentDetails p{
-    font-size: 1.4rem;
-    line-height: 1.8;
-}
-  .author{
-  font-size: 1.2rem;
-}
-  .col-3{
-    display: none;
-  }
-  .userComment p{
-  width: 100%;
-  font-size: 1.3rem;
-  }
-  
-  .card, .topic h2 {
-    width:100%;
-    margin: 25px;
-  }
-  .topic h2{
-    font-size: 2rem;
-  }
-  .card .body p{
-    font-size: 1.9rem;
+@media (max-width: 900px) {
+    .col-9 {
+        width: 100%;
+        margin: 0 25px;
+    }
+    .commentDetails p {
+        font-size: 1.4rem;
+        line-height: 1.8;
+    }
+    .author {
+        font-size: 1.2rem;
+    }
 
-  }
- 
+    .col-3 {
+        display: none;
+    }
+    .userComment p {
+        width: 100%;
+        font-size: 1.3rem;
+    }
 
+    .card,
+    .topic h2 {
+        width: 100%;
+        margin: 25px;
+    }
+    .topic h2 {
+        font-size: 2rem;
+    }
+    .card .body p {
+        font-size: 1.9rem;
+    }
 }
 
 @keyframes anime {
@@ -391,9 +457,9 @@ ul {
 .footer {
     background-color: #0e1e32;
     padding: 70px 0;
-    position: absolute;
-    bottom: 0;
+
     width: 100%;
+    margin-top: 50px;
 }
 
 .footer-col {
