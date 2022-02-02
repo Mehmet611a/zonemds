@@ -557,10 +557,10 @@ ul {
 
 .wrapTitleAndImg {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     width: 80%;
+    height: 60vh;
 }
 
 .newsTitle {
@@ -573,7 +573,7 @@ ul {
 
 .newsImg {
     width: 100%;
-    height: 350px;
+    height: 60%;
     object-fit: cover;
     animation: popUp 1s ease-in-out;
 }
