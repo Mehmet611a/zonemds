@@ -16,10 +16,12 @@ html {
     width: 80vw;
 }
 
+
 .rowFlex {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
 }
 nav {
     width: 100%;
@@ -56,6 +58,7 @@ nav .menu li a:hover {
     color: #c31815;
 }
 
+
 .header {
     margin: 30px 0px;
     display: flex;
@@ -91,7 +94,10 @@ nav .menu li a:hover {
     margin: 20px 0px;
     font-family: "IBM Plex Serif";
 }
-
+.header-info h1 a{
+    text-decoration: none;
+    color: #000;
+}
 .header-info p {
     line-height: 1.8;
     font-family: Poppins;
@@ -117,6 +123,87 @@ header .header-news p {
     color: #fff;
     font-family: Poppins;
 }
+
+
+/*****  main Section ******/
+.main {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.news {
+    width: 70%;
+}
+.news h2 {
+    background-color: #f1f2f3;
+    padding: 15px;
+    color: #2a2a2a;
+    font-family: "Poppins";
+}
+
+.news .cards {
+    display: flex;
+    margin-top: 13px;
+    justify-content: space-between;
+}
+.news .cards .card {
+    width: 48%;
+    background-color: #f1f2f3;
+}
+.news .cards .card .card-body {
+    padding: 15px;
+}
+.news .cards .card .card-body h3 {
+    color: #2a2a2a;
+    font-family: "IBM Plex Serif";
+}
+.news .cards .card .card-body p {
+    line-height: 1.5;
+    margin-top: 10px;
+    font-family: "Nunito Sans";
+    font-size: 1rem;
+}
+
+.news .cards .card img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+.news .cards .card:hover img {
+    transform: scale(1.1);
+}
+.blogs {
+    width: 25%;
+}
+
+.blogs h2 {
+    background-color: #f1f2f3;
+    padding: 15px;
+    color: #2a2a2a;
+    font-family: "Poppins";
+}
+.last-blogs {
+    background-color: #f1f2f3;
+    padding: 15px 0px 15px 15px;
+    margin-top: 10px;
+    height: 500px;
+}
+
+.last-blogs p {
+    color: #2a2a2a;
+    margin-bottom: 15px;
+    font-family: "IBM Plex Serif";
+    line-height: 115.38%;
+}
+
+
+/**** end main section ***/
+
 
 /* start comment section*/
 .comment,
@@ -260,7 +347,8 @@ input[type="text"]:focus {
     margin: 15px auto;
 }
 .card {
-    width: 220px;
+    width: 18%;
+    /* width: 220px; */
     border-radius: 6px;
     overflow: hidden;
     background-color: #f7f4f4;
@@ -285,82 +373,7 @@ input[type="text"]:focus {
     margin-bottom: 25px;
     margin-top: 10px;
 }
-/*****  main Section ******/
-.main {
-    padding-top: 60px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: flex-start;
-}
 
-.news {
-    width: 70%;
-}
-.news h2 {
-    background-color: #f1f2f3;
-    padding: 15px;
-    color: #2a2a2a;
-    font-family: "Poppins";
-}
-
-.news .cards {
-    display: flex;
-    margin-top: 13px;
-    justify-content: space-between;
-}
-.news .cards .card {
-    width: 48%;
-    background-color: #f1f2f3;
-}
-.news .cards .card .card-body {
-    padding: 15px;
-}
-.news .cards .card .card-body h3 {
-    color: #2a2a2a;
-    font-family: "IBM Plex Serif";
-}
-.news .cards .card .card-body p {
-    line-height: 1.5;
-    margin-top: 10px;
-    font-family: "Nunito Sans";
-    font-size: 1rem;
-}
-
-.news .cards .card img {
-    max-width: 100%;
-    height: 200px;
-    object-fit: cover;
-    transition: all 0.5s ease-in-out;
-}
-
-.news .cards .card:hover img {
-    transform: scale(1.1);
-}
-.blogs {
-    width: 25%;
-}
-
-.blogs h2 {
-    background-color: #f1f2f3;
-    padding: 15px;
-    color: #2a2a2a;
-    font-family: "Poppins";
-}
-.last-blogs {
-    background-color: #f1f2f3;
-    padding: 15px 0px 15px 15px;
-    margin-top: 10px;
-    height: 500px;
-}
-
-.last-blogs p {
-    color: #2a2a2a;
-    margin-bottom: 15px;
-    font-family: "IBM Plex Serif";
-    line-height: 115.38%;
-}
-/**** end main section ***/
 /* End topic Section */
 /* end comment  section*/
 
@@ -531,6 +544,8 @@ ul {
 .footer-logo {
     text-align: center;
 }
+
+
 
 .newsTitleAndImg {
     position: relative;
@@ -774,5 +789,69 @@ ul {
     }
     .card .body p {
         font-size: 1.9rem;
+    }
+}
+/** Responsive ***/ 
+@media (min-width: 900px) and (max-width: 1247px){
+    .header-info {
+       width: 100%;
+    }
+}
+@media (max-width :900px){
+    body{
+        overflow-x: hidden;
+    }
+    .container {
+      overflow: hidden;
+      width: 100vw;
+      padding: 0px 25px;
+    }
+    nav .menu {
+        display: none;
+    }
+   
+    nav{
+        flex-wrap: wrap;
+    }
+
+    .header{
+        display: block;
+    }
+    .header-info{
+        width: 100%;
+    }
+    header .header-news{
+      display: block;
+      width: 100%;
+      
+   
+    
+    }
+    header .header-news button{
+       margin-left: 115px;
+       padding: 5px;
+    }
+    header .header-news p{
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .main{
+        display: block;
+        padding-top: 20px;
+    }
+    .news ,.news2{
+        width: 100%;
+    }
+    .news .cards ,.news2 .cards{
+        display: block;
+    }
+    .news .cards .card ,    .news2 .cards .card {
+        width: 100%;
+        margin: auto auto 15px auto;
+
+    }
+    .blogs{
+        width: 100%;
     }
 }
