@@ -80,14 +80,14 @@ nav .menu li a:hover {
   font-family: Poppins;
 }
 
-header .news {
+header .header-news {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #c31815;
   padding: 5px;
 }
-header .news button {
+header .header-news button {
   background-color: #fff;
   border: 1px solid #fff;
   margin-right: 30px;
@@ -96,7 +96,7 @@ header .news button {
   font-family: Poppins;
   animation: anime 1s ease-in-out 2s infinite forwards;
 }
-header .news p {
+header .header-news p {
   color: #fff;
   font-family: Poppins;
 }
@@ -112,3 +112,80 @@ header .news p {
     font-size: 1.5rem;
   }
 }
+
+/*****  main Section ******/
+.main {
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.news {
+  width: 70%;
+}
+.news h2 {
+  background-color: #f1f2f3;
+  padding: 15px;
+  color: #2a2a2a;
+  font-family: "Poppins";
+}
+
+.news .cards {
+  display: flex;
+  margin-top: 13px;
+  justify-content: space-between;
+}
+.news .cards .card {
+  width: 48%;
+  background-color: #f1f2f3;
+}
+.news .cards .card .card-body {
+  padding: 15px;
+}
+.news .cards .card .card-body h3 {
+  color: #2a2a2a;
+  font-family: "IBM Plex Serif";
+}
+.news .cards .card .card-body p {
+  line-height: 1.5;
+  margin-top: 10px;
+  font-family: "Nunito Sans";
+  font-size: 1rem;
+}
+
+.news .cards .card img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+
+.news .cards .card:hover img {
+  transform: scale(1.1);
+}
+.blogs {
+  width: 25%;
+}
+
+.blogs h2 {
+  background-color: #f1f2f3;
+  padding: 15px;
+  color: #2a2a2a;
+  font-family: "Poppins";
+}
+.last-blogs {
+  background-color: #f1f2f3;
+  padding: 15px 0px 15px 15px;
+  margin-top: 10px;
+  height: 500px;
+}
+
+.last-blogs p {
+  color: #2a2a2a;
+  margin-bottom: 15px;
+  font-family: "IBM Plex Serif";
+  line-height: 115.38%;
+}
+/**** end main section ***/
