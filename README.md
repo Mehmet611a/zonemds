@@ -82,6 +82,6 @@ As a **person looking to read the news**
 
 ## ✧ Developers
 - [Mohammad AlHabil](https://github.com/MohammadAlHabil)
-- [Maram Ismail](https://github.com/MaramMs)
-- [Ayman Sami](https://github.com/AFahgan)
 - [Najlaa Ouda](https://github.com/EngNajlaa)
+- [Ayman Fahjan](https://github.com/AFahgan)
+- [Maram Ismail](https://github.com/MaramMs)
