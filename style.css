@@ -684,6 +684,7 @@ ul {
         align-items: flex-start;
     }
     .newsDesc {
+        margin-top: -20px;
         width: 100%;
     }
     .recommended {
@@ -742,6 +743,7 @@ ul {
     }
     .newsDesc {
         width: 65%;
+        margin-top: -5px;
     }
     .recommended {
         margin-top: 30px;
